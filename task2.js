@@ -9,17 +9,22 @@ const yellow = `Hey ${nameC} you know what yellow means, SLOW DOWN!`
 const red = `Hey ${nameC} you know what red means, STOP!`
 
 if(choseU === 'GREEN'){
-console.log(green);
+    document.querySelector('p').innerHTML = ` ${green}`;
+    console.log(green)
 }
 
 else if (choseU === 'YELLOW'){
-    console.log(yellow);
+    
+document.querySelector('p').innerHTML = ` ${yellow}`;
+console.log(yellow)
 }
 
 else if (choseU === 'RED'){
-    console.log(red);
+    document.querySelector('p').innerHTML = ` ${red}`;
+    console.log(red)
 }
 
 else{
+    document.querySelector('p').innerHTML = ` bummer, you did not choose a valid answer 😫`;
     console.log(`bummer, you did not choose a valid answer 😫`)
 }
